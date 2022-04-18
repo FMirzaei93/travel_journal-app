@@ -23,6 +23,13 @@ header {
 
 header i {
   color: white;
+  font-size: 25px;
+}
+
+span.website_name {
+  color: white;
+  font-size: 13px;
+  margin-left: 5px;
 }
 
 /* ------------ All Items div ---------- */
