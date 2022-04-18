@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --header_bg: #f55a5a;
+  --text_color: #2b283a;
+  --link_color: #918e9b;
+  --border-color: #f5f5f5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+/* ------------- Header -------------- */
+header {
+  height: 55px;
+  background-color: var(--header_bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header i {
+  color: white;
+}
+
+/* ------------ All Items div ---------- */
+div.items {
+  margin: 30px 35px;
+}
+div.items > * {
+  padding: 20px 0;
+}
+
+/* ------------ ListItem Component ---------- */
+section.list-item {
+  display: flex;
+}
+
+section.list-item:not(:last-child) {
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+/* ------------ Left Side  ---------- */
+img {
+  height: 170px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+/* ------------ Right Side ---------- */
+div.right-side {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+div.right-side i {
+  color: var(--header_bg);
+  font-size: 12px;
+}
+
+div.right-side span.location {
+  text-transform: uppercase;
+  color: var(--text_color);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+div.right-side a {
+  color: var(--link_color);
+  margin-left: 15px;
+  font-size: 10px;
+}
+div.right-side h1 {
+  text-transform: capitalize;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+div.date {
+  margin-top: 20px;
+  font-size: 10px;
+  font-weight: 550;
+}
+
+p.description {
+  font-size: 10px;
+  color: var(--text_color);
+  margin-top: 11px;
+  width: 400px;
 }
