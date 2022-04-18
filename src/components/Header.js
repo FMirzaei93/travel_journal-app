@@ -1,3 +1,7 @@
 export default function Header() {
-  return <div></div>;
+  return (
+    <header>
+      <i className='fas fa-globe-americas'> My Travel Journal</i>
+    </header>
+  );
 }
